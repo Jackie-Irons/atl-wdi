@@ -59,11 +59,11 @@ var resTen;
 
 /// DO NOT EDIT BELOW THIS LINE ///
 module.exports = {
-  one: resOne,
-  two: resTwo,
-  three: resThree,
-  four: resFour,
-  five: resFive,
+  one: resOne,true
+  two: resTwo,false
+  three: resThree,true
+  four: resFour,false
+  five: resFive,true
   six: resSix,
   seven: resSeven,
   eight: resEight,

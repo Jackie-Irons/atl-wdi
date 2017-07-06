@@ -60,13 +60,43 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+
+> Answer here: This to-do list will keep track of your daily workouts. 
+Task:Name, time when begun,time it is completed
+var task {
+  workout: 'upper body'
+  timeStarted: '7:00'
+  timeCompleted: 'undfinished'
+};
+
+
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
+> Answer here: 
+photo has:name,date,url
+album has:name,set of photos
+user has: username,set of photos that theyve uploaded
+set of albums that theyve created.
+var photo = {
+  name: 'photo from beach',
+  date: 'February 2016',
+  url: 'images/photo1.jpg'
+};
+
+var album = {
+  name: 'Trip to the Bahamas',
+  setOfPhotos: ['images/photo1.jpg', 'images/photo2.jpg', 'images/photo3.jpg', 'images/photo4.jpg', 'images/photo5.jpg']
+};
+
+var user = {
+  username: 'marenwoodruff',
+  imagesUploaded: ['images/photo1.jpg', 'images/photo2.jpg', 'images/photo3.jpg', 'images/photo4.jpg', 'images/photo5.jpg'],
+  albumsCreated: ['Trip to the Bahamas', 'Exploring Prague', 'Dream trip to Bali (to be added)']
+};
+
 
 ### 3. Home Automation Manager
 
@@ -75,7 +105,20 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+> Answer here:
+light has: brightness level,location,name
+Home has: temperature,set of lights
+var light = {
+  brightnessLevel: 'super bright',
+  location: 'living room',
+  name: 'chandlier'
+};
+
+var homeSystem = {
+  temp: '73 degrees',
+  setOfLights: ['living room', 'office', 'kitchen', 'bedroom', ' bathroom']
+};
+
 
 ### 4. Sneaker Store
 
@@ -84,6 +127,16 @@ case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
 > Answer here
+Product has:name,description,price
+Order iteam has: product, a quanty
+order has:a set of order items,a status (i.e. 'in progress', 'completed'), a date of when the order was completed
+
+var product = { name: 'Vitamix Ascent A2500 Blender, Black', description: 'The best blender in the world. Part blender, part food processor. Can make soup, smoothies, sauces! It is the item that will last forever- you can pass it on to your children. So, spend the money now, and let them save later!', price: '$499.95' };
+
+var vitamixOrder = { product: 'vitamix', quantity: 1 };
+
+var order: { setOfOrderItems: [vitamixOrder], status: 'in progress', dateCompleted: 'incomplete' };
+
 
 ## Representing Abstractions in Code
 
