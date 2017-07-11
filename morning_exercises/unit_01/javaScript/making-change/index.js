@@ -5,7 +5,11 @@
 /// DO NOT EDIT ABOVE THIS LINE ///
 
 var makeChange = function(price, payment) {
-  // Your Code Here
+var changeLeft = Math.round(100*payment - 100*price);
+	if (changeLeft < 0) {return [0,0,0,0]};
+	var results = [], quantity;
+
+
 };
 
 /// DO NOT EDIT BELOW THIS LINE ///
