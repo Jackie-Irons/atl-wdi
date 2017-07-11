@@ -47,9 +47,10 @@ const CounterCollection = {
 
 // UI //
 const Presenter = {
+  const Presenter = {
   insertCounterComponent: function(newCountId){
     console.log(`insert counter component #${newCountId}`);
-     let newCounterComponent = document.createElement('div');
+    let newCounterComponent = document.createElement('div');
     newCounterComponent.innerHTML =
     `<h3>Count: <span>0</span></h3> <button class='increment'> +1 </button> <button class='delete'> Delete </button>`;
     newCounterComponent.className += ' counter';
@@ -75,7 +76,6 @@ const Presenter = {
 // Top-Level Application Control //
 const AppController = {
   onClickNewCounter: function(event){
-    onClickNewCounter: function(event){
     CounterCollection.createCounter();
     Presenter.insertCounterComponent(CounterCollection.lastCountId);
     console.log(`click new counter (#${CounterCollection.lastCountId})`);
