@@ -87,3 +87,5 @@ export default [
         image: require('./images/pizza11.jpg')
   }
 ];
+
+export default App;

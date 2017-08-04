@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import './index.css';
+import SplashImage from './Components/SplashImage.jsx';
+
 
 class App extends Component {
   render() {
     return (
+
       <div className="App">
-        <h1>Place your components in here!</h1>
+       	<SplashImage />
       </div>
+
     );
   }
 }
