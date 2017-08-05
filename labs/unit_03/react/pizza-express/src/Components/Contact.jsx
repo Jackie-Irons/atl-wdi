@@ -1,17 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Contact extends Component {
-	render(){
-		return (
-			<div className="contact">
-          <div>{this.props.data.name}</div>
-          <p>{this.props.data.address}</p>
-          <p>{this.props.data.phone}</p>
-        </div>
-        );
-    }
+  render() {
+    return (
+      <div className="contact">
+        <h1>Store Hours</h1>
+        <p>Sunday-Thursday: 11:00am to 12:00am | Sunday-Thursday: 11:00am to 1:00am</p>
+        <p>Phone: 404-555-1234</p>
+        <p>Email: pizzaheaver@yes.please</p>
+      </div>
+    )
+  }
 }
-
-
 
 export default Contact

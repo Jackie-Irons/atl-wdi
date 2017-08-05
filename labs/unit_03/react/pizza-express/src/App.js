@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
-import './index.css';
-import SplashImage from './Components/SplashImage.jsx';
-import Navbar from './Components/Navbar.jsx';
-import Contact from './Components/Contact.jsx';
-
-
+import NavBar from './Components/Navbar';
+import SplashImage from './Components/SplashImage';
+import Description from './Components/Description';
+import MenuList from './Components/MenuList';
+import LocationList from './Components/LocationList';
+import Contact from './Components/Contact';
 
 class App extends Component {
   render() {
     return (
-
       <div className="App">
-       	<SplashImage />
-       	<Navbar />
+        <NavBar />
+        <SplashImage />
+        <Description />
+        <MenuList />
+        <LocationList />
+        <Contact />
+
       </div>
 
     );
